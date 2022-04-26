@@ -1,3 +1,6 @@
+@import "variables";
+@import "global";
+
 body {
   display: grid;
   background-image: url(img/posiblefondo.jpg);
@@ -5,13 +8,18 @@ body {
   background-size: cover;
   align-items: center;
   grid-template-columns: 100%;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas:
+    "header"
+    "main"
+    "footer"
+  ;
 }
 
 .body-pc {
   background-image: url(img/fondo\ pc.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 .todo {
@@ -28,17 +36,20 @@ body {
   border: 8px groove rgb(172, 17, 17);
 }
 
-.registro {
-  margin-top: 60px;
-  background-color: #8000ff;
-  border: groove 4px #00ffff;
+.registro
+{
+margin-top: 90px;
+background-color: $violeta;
+border:groove 4px #00ffff;
 }
 
 .padre-flex {
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
 }
 
 header {
@@ -49,50 +60,46 @@ header {
   z-index: 1;
 }
 
-.a {
-  color: rgb(255, 0, 0);
-}
-
-.p {
+.p-2
+{
   color: white;
 }
-
-.p-2 {
-  color: rgb(255, 255, 255);
-}
-
 .ay {
   margin-top: 60px;
+
 }
 
 footer {
   margin-top: 60px;
   font-size: 1rem;
   grid-area: footer;
-  border: 0.5rem groove rgb(84, 11, 221);
+  border: 0.5rem groove $violeta;
   background-image: url(img/fondo.jpg);
 }
 
 .pc {
   width: 100%;
   background-image: url(img/pie\ pc.jpg);
-  border: 8px groove rgb(172, 17, 17);
+  border: 8px groove $rojo;
   height: 100%;
 }
 
 .text-pc {
-  background-image: linear-gradient(#ff0000, #ff661a);
+  background-image: linear-gradient($rojo, #ff661a);
 }
 
-.menu {
-  height: 60px;
-  border: groove 4px #8000ff;
-  background-image: url(img/fondo.jpg);
+
+.menu
+{
+ height: 60px;
+border: groove 4px $violeta;
+background-image: url(img/fondo.jpg);
 }
 
-.menu-pc {
-  border: groove 4px #ff0000;
-  background-image: url(img/pie\ pc.jpg);
+.menu-pc
+{
+border: groove 4px $rojo;
+background-image: url(img/pie\ pc.jpg);
 }
 
 .section-pc {
@@ -100,11 +107,12 @@ footer {
   animation-name: example-2;
   margin-top: 80px;
   font-size: 1.4rem;
-  background: red;
+  background:$rojo;
 }
 
 .text-consola {
-  background-image: linear-gradient(#8000ff, #00ffff);
+  background-image: linear-gradient($violeta, #00ffff);
+
 }
 
 .section-consola {
@@ -112,7 +120,7 @@ footer {
   animation: duration 20s;
   animation-name: example;
   font-size: 1.5rem;
-  background-color: rgb(172, 11, 236);
+  background-color: $violeta;
 }
 
 main {
@@ -120,6 +128,7 @@ main {
 }
 
 .todo-consola {
+ 
   margin: 0 auto;
   max-width: 1980px;
   background-image: url(img/fondo.jpg);
@@ -127,55 +136,67 @@ main {
 }
 
 @keyframes example-2 {
-  from {
-    background-color: #ff0000;
-  }
-  to {
-    background-color: #ff661a;
-  }
+  from {background-color:$rojo;}
+  to {background-color:#ff661a;}
 }
+
+
 @keyframes example {
-  from {
-    background-color: #8000ff;
-  }
-  to {
-    background-color: #00ffff;
-  }
+  from {background-color:$violeta;}
+  to {background-color:#00ffff;}
 }
+
 @media (max-width: 768px) {
   body {
     grid-template-columns: 100%;
     grid-template-rows: 4%;
     display: grid;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas:
+      "header"
+      "main"
+      "footer"
+    ;
   }
+
+  .registro
+{
+margin-top: 400px;
+background-color: $violeta;
+border:groove 4px #00ffff;
+}
 
   main {
     grid-area: main;
   }
 
+
+
   header {
+
     grid-area: header;
+    padding: 0.5rem 0;
     position: sticky;
     top: 0;
     z-index: 1;
+    height: 40px;
   }
 
   footer {
+    
     grid-area: footer;
     border: 0.5rem groove rgb(14, 11, 17);
     background-image: url(img/fondo.jpg);
   }
 
-  frame {
-    height: 100px;
+  frame
+  {
+  height: 100px;
   }
 }
+
 .footer-consola {
   font-size: 1rem;
   grid-area: footer;
-  border: 0.5rem groove rgb(106, 6, 236);
+  border: 0.5rem groove $violeta;
   background-image: url(img/fondo.jpg);
 }
-
-/*# sourceMappingURL=estilo.css.map */
