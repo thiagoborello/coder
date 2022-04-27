@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -181,6 +182,10 @@ main {
   grid-area: footer;
   border: 0.5rem groove #8000ff;
   background-image: url(img/fondo.jpg);
+}
+
+.boton {
+  background-color: #ff0000;
 }
 
 /*# sourceMappingURL=estilo.css.map */
