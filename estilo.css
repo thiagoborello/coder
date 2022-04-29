@@ -4,6 +4,43 @@
   box-sizing: border-box;
 }
 
+.menu-pc {
+  border: groove 4px #ff0000;
+  background-image: url(img/pie\ pc.jpg);
+}
+
+.section-pc {
+  animation: duration 20s;
+  animation-name: example-2;
+  margin-top: 80px;
+  font-size: 1.4rem;
+  background: #ff0000;
+}
+
+.body-pc {
+  background-image: url(img/fondo\ pc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.todo-pc {
+  margin: 0 auto;
+  max-width: 1980px;
+  background-image: url(img/pie\ pc.jpg);
+  border: 8px groove rgb(172, 17, 17);
+}
+
+.pc {
+  width: 100%;
+  background-image: url(img/pie\ pc.jpg);
+  border: 8px groove #ff0000;
+  height: 100%;
+}
+
+.text-pc {
+  background-image: linear-gradient(#ff0000, #ff661a);
+}
+
 body {
   display: grid;
   background-image: url(img/posiblefondo.jpg);
@@ -14,12 +51,6 @@ body {
   grid-template-areas: "header" "main" "footer";
 }
 
-.body-pc {
-  background-image: url(img/fondo\ pc.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .todo {
   margin: 0 auto;
   max-width: 1980px;
@@ -27,12 +58,6 @@ body {
   border: 8px groove;
 }
 
-.todo-pc {
-  margin: 0 auto;
-  max-width: 1980px;
-  background-image: url(img/pie\ pc.jpg);
-  border: 8px groove rgb(172, 17, 17);
-}
 
 .registro {
   margin-top: 90px;
@@ -71,26 +96,10 @@ footer {
   background-image: url(img/fondo.jpg);
 }
 
-.pc {
-  width: 100%;
-  background-image: url(img/pie\ pc.jpg);
-  border: 8px groove #ff0000;
-  height: 100%;
-}
-
-.text-pc {
-  background-image: linear-gradient(#ff0000, #ff661a);
-}
-
 .menu {
   height: 60px;
   border: groove 4px #8000ff;
   background-image: url(img/fondo.jpg);
-}
-
-.menu-pc {
-  border: groove 4px #ff0000;
-  background-image: url(img/pie\ pc.jpg);
 }
 
 .section-pc {

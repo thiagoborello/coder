@@ -1,5 +1,6 @@
 @import "variables";
 @import "global";
+@import "pc";
 
 body {
   display: grid;
@@ -15,12 +16,6 @@ body {
   ;
 }
 
-.body-pc {
-  background-image: url(img/fondo\ pc.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
 
 .todo {
   margin: 0 auto;
@@ -29,12 +24,6 @@ body {
   border: 8px groove;
 }
 
-.todo-pc {
-  margin: 0 auto;
-  max-width: 1980px;
-  background-image: url(img/pie\ pc.jpg);
-  border: 8px groove rgb(172, 17, 17);
-}
 
 .registro
 {
@@ -77,16 +66,6 @@ footer {
   background-image: url(img/fondo.jpg);
 }
 
-.pc {
-  width: 100%;
-  background-image: url(img/pie\ pc.jpg);
-  border: 8px groove $rojo;
-  height: 100%;
-}
-
-.text-pc {
-  background-image: linear-gradient($rojo, #ff661a);
-}
 
 
 .menu
@@ -96,11 +75,6 @@ border: groove 4px $violeta;
 background-image: url(img/fondo.jpg);
 }
 
-.menu-pc
-{
-border: groove 4px $rojo;
-background-image: url(img/pie\ pc.jpg);
-}
 
 .section-pc {
   animation: duration 20s;

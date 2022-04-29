@@ -1,0 +1,46 @@
+
+
+
+@media (max-width: 768px) {
+    body {
+      grid-template-columns: 100%;
+      grid-template-rows: 4%;
+      display: grid;
+      grid-template-areas: "header" "main" "footer";
+    }
+  
+    .registro {
+      margin-top: 400px;
+      background-color: #8000ff;
+      border: groove 4px #00ffff;
+    }
+  
+    main {
+      grid-area: main;
+    }
+  
+    header {
+      grid-area: header;
+      padding: 0.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      height: 40px;
+    }
+  
+    footer {
+      grid-area: footer;
+      border: 0.5rem groove rgb(14, 11, 17);
+      background-image: url(img/fondo.jpg);
+    }
+  
+    frame {
+      height: 100px;
+    }
+  }
+  .footer-consola {
+    font-size: 1rem;
+    grid-area: footer;
+    border: 0.5rem groove #8000ff;
+    background-image: url(img/fondo.jpg);
+  }
