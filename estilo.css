@@ -80,6 +80,10 @@ header {
   z-index: 1;
 }
 
+.p-6 {
+  color:#ff0000;
+}
+
 .p-2 {
   color: white;
 }
