@@ -1,3 +1,37 @@
+
 $violeta:#8000ff;
 $rojo:#ff0000;
 $naranja:#ff661a;
+
+@mixin marco-consola
+{
+border: groove 8px $violeta;    
+}
+
+@mixin marco
+{
+border: groove 8px;    
+}
+
+@mixin marco-pc
+{
+border: groove 8px $rojo;    
+}
+.section{
+    margin-top: 60px;
+    font-size: 1.4rem;
+  }
+  
+  .section--consola {
+    @extend .section;
+    animation: duration 20s;
+    animation-name: example;
+    background-color: $violeta;
+  }
+  
+  .section--pc {
+    @extend .section;
+    animation: duration 20s;
+    animation-name: example-2;
+    background:$rojo;
+  }

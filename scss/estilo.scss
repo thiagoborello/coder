@@ -16,12 +16,16 @@ body {
   ;
 }
 
+.p-6
+{
+  color: red;
+}
 
 .todo {
   margin: 0 auto;
   max-width: 1980px;
   background-image: url(img/fondo.jpg);
-  border: 8px groove;
+  @include marco
 }
 
 
@@ -54,19 +58,18 @@ header {
   color: white;
 }
 .ay {
-  margin-top: 60px;
+  margin-top: 80px;
 
 }
 
 footer {
-  margin-top: 60px;
-  font-size: 1rem;
-  grid-area: footer;
+  animation: duration 20s;
+  animation-name: example;
+  margin-top: 80px;
+  font-size: 1.4rem;
   border: 0.5rem groove $violeta;
   background-image: url(img/fondo.jpg);
 }
-
-
 
 .menu
 {
@@ -76,25 +79,28 @@ background-image: url(img/fondo.jpg);
 }
 
 
-.section-pc {
+.section{
+  margin-top: 60px;
+  font-size: 1.4rem;
+}
+
+.section--consola {
+  @extend .section;
+  animation: duration 20s;
+  animation-name: example;
+  background-color: $violeta;
+}
+
+.section--pc {
+  @extend .section;
   animation: duration 20s;
   animation-name: example-2;
-  margin-top: 80px;
-  font-size: 1.4rem;
   background:$rojo;
 }
 
 .text-consola {
   background-image: linear-gradient($violeta, #00ffff);
 
-}
-
-.section-consola {
-  margin-top: 20px;
-  animation: duration 20s;
-  animation-name: example;
-  font-size: 1.5rem;
-  background-color: $violeta;
 }
 
 main {
@@ -106,6 +112,7 @@ main {
   margin: 0 auto;
   max-width: 1980px;
   background-image: url(img/fondo.jpg);
+  @include marco;
   border: 8px groove rgb(110, 17, 172);
 }
 
@@ -153,13 +160,6 @@ border:groove 4px #00ffff;
     top: 0;
     z-index: 1;
     height: 40px;
-  }
-
-  footer {
-    
-    grid-area: footer;
-    border: 0.5rem groove rgb(14, 11, 17);
-    background-image: url(img/fondo.jpg);
   }
 
   frame

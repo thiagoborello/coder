@@ -4,14 +4,6 @@
     border: groove 4px $rojo;
     background-image: url(img/pie\ pc.jpg);
   }
-
-  .section-pc {
-    animation: duration 20s;
-    animation-name: example-2;
-    margin-top: 80px;
-    font-size: 1.4rem;
-    background: $rojo;
-  }
   
   .body-pc {
     background-image: url(img/fondo\ pc.jpg);
@@ -23,14 +15,14 @@
     margin: 0 auto;
     max-width: 1980px;
     background-image: url(img/pie\ pc.jpg);
-    border: 8px groove rgb(172, 17, 17);
+    @include marco-consola;
   }
 
   .pc {
     width: 100%;
     background-image: url(img/pie\ pc.jpg);
-    border: 8px groove $rojo;
-    height: 100%;
+    @include marco-pc;
+    grid-area:footer ;
   }
   
   .text-pc {
