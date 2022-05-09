@@ -1,5 +1,7 @@
 
 
+
+
 .section--pc {
   animation: duration 20s;
   animation-name: example-2;
@@ -215,4 +217,3 @@ main {
 .boton {
   background-color: #ff0000;
 }
-
