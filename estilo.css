@@ -1,13 +1,4 @@
-.section, .section--pc, .section--consola {
-  margin-top: 60px;
-  font-size: 1.4rem;
-}
 
-.section--consola {
-  animation: duration 20s;
-  animation-name: example;
-  background-color: #8000ff;
-}
 
 .section--pc {
   animation: duration 20s;
