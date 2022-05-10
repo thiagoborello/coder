@@ -1,4 +1,19 @@
+.mj-cl {
+  background-color: #8000ff;
+}
 
+
+
+.section, .section--pc, .section--consola {
+  margin-top: 60px;
+  font-size: 1.4rem;
+}
+
+.section--consola {
+  animation: duration 20s;
+  animation-name: example;
+  background-color: #8000ff;
+}
 
 .section--pc {
   animation: duration 20s;
@@ -9,8 +24,15 @@
 * {
   margin: 0;
   padding: 0;
-  justify-content: center;
   box-sizing: border-box;
+}
+
+.mj-cl {
+  background-color: #8000ff;
+}
+
+.carrusel {
+  height: 200px;
 }
 
 .section, .section--consola, .section--pc {
@@ -142,7 +164,6 @@ footer {
 }
 
 .text-consola {
-  font-size: 1.8rem;
   background-image: linear-gradient(#8000ff, #00ffff);
 }
 
@@ -215,4 +236,3 @@ main {
 .boton {
   background-color: #ff0000;
 }
-

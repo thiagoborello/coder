@@ -1,3 +1,7 @@
+.mj-cl {
+  background-color: #8000ff;
+}
+
 .section, .section--pc, .section--consola {
   margin-top: 60px;
   font-size: 1.4rem;
@@ -18,8 +22,11 @@
 * {
   margin: 0;
   padding: 0;
-  justify-content: center;
   box-sizing: border-box;
+}
+
+.mj-cl {
+  background-color: #8000ff;
 }
 
 .section, .section--consola, .section--pc {
@@ -151,7 +158,6 @@ footer {
 }
 
 .text-consola {
-  font-size: 1.8rem;
   background-image: linear-gradient(#8000ff, #00ffff);
 }
 
@@ -224,6 +230,5 @@ main {
 .boton {
   background-color: #ff0000;
 }
-
 
 /*# sourceMappingURL=estilo.css.map */
