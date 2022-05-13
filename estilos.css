@@ -157,9 +157,9 @@ footer {
   background-image: linear-gradient(#8000ff, #00ffff);
 }
 
-.text-movile {
+.text-movil {
   background-image: linear-gradient(#8000ff, #00ffff);
-
+  font-size: 1.4rem;
 }
 
 main {
