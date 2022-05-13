@@ -57,10 +57,6 @@ header {
 {
   color: white;
 }
-.ay {
-  margin-top: 80px;
-
-}
 
 footer {
   animation: duration 20s;
@@ -73,14 +69,14 @@ footer {
 
 .menu
 {
- height: 60px;
+height: 70px;
 border: groove 4px $violeta;
 background-image: url(img/fondo.jpg);
 }
 
 
 .section{
-  margin-top: 60px;
+  margin-top: 30px;
   font-size: 1.4rem;
 }
 
@@ -101,6 +97,11 @@ background-image: url(img/fondo.jpg);
 .text-consola {
   background-image: linear-gradient($violeta, #00ffff);
 
+}
+
+.text-movile {
+  background-image: linear-gradient($violeta, #00ffff);
+  font-size: 1.9rem;
 }
 
 main {
@@ -139,6 +140,22 @@ main {
     ;
   }
 
+  .text-pc {
+    background-image: linear-gradient($rojo, $naranja);
+    font-size: 1rem;
+  }
+
+  .text-consola {
+    background-image: linear-gradient($violeta, #00ffff);
+    font-size: 1rem;
+  }
+  
+  .text-movile {
+    background-image: linear-gradient($violeta, #00ffff);
+    font-size: 1rem;
+  }
+  
+
   .registro
 {
 margin-top: 400px;
@@ -147,10 +164,17 @@ border:groove 4px #00ffff;
 }
 
   main {
+    font-size: 1rem;
     grid-area: main;
   }
 
-
+  .menu
+  {
+  height: 70px;
+  border: groove 4px $violeta;
+  background-image: url(img/fondo.jpg);
+  }
+  
 
   header {
 
@@ -167,6 +191,7 @@ border:groove 4px #00ffff;
   height: 100px;
   }
 }
+
 
 .footer-consola {
   font-size: 1rem;
